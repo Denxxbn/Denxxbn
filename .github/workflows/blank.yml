@@ -1,0 +1,12 @@
+How many times ‘Class’ is printed by the following code?
+ #include <iostream> using namespace std;
+struct A { A() { cout <<
+struct A1 : public A { };
+struct A2 : public A { };
+struct A3 : public A { };
+struct A4 : public A { };
+struct B : public A1, public A2, public A3, public A4 { };
+int main() {
+B b;
+return 0;
+}
